@@ -1,10 +1,10 @@
 {
   "name": "mcp-shave",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero-dependency stdio JSON-RPC proxy for MCP servers that prunes noisy payloads and saves 50-92% of LLM context tokens",
   "type": "module",
   "bin": {
-    "mcp-shave": "./dist/index.js"
+    "mcp-shave": "dist/index.js"
   },
   "main": "./dist/index.js",
   "files": [
