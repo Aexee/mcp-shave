@@ -1,0 +1,58 @@
+{
+  "name": "mcp-shave",
+  "version": "0.1.0",
+  "description": "Zero-dependency stdio JSON-RPC proxy for MCP servers that prunes noisy payloads and saves 50-92% of LLM context tokens",
+  "type": "module",
+  "bin": {
+    "mcp-shave": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch",
+    "test": "node --import tsx test/run-tests.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "llm",
+    "json-rpc",
+    "proxy",
+    "token-optimization",
+    "token-saver",
+    "context-pruning",
+    "claude-code",
+    "cursor",
+    "codex",
+    "windsurf"
+  ],
+  "author": "Ahmet (https://github.com/Aexee)",
+  "license": "MIT",
+  "homepage": "https://github.com/Aexee/mcp-shave#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aexee/mcp-shave.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aexee/mcp-shave/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "overrides": {
+    "esbuild": "^0.28.2"
+  }
+}
